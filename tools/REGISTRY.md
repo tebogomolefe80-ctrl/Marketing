@@ -61,7 +61,7 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | meta-ads | Ads | ✓ | - | [✓](clis/meta-ads.js) | ✓ | [meta-ads.md](integrations/meta-ads.md) |
 | linkedin-ads | Ads | ✓ | - | [✓](clis/linkedin-ads.js) | - | [linkedin-ads.md](integrations/linkedin-ads.md) |
 | tiktok-ads | Ads | ✓ | - | [✓](clis/tiktok-ads.js) | ✓ | [tiktok-ads.md](integrations/tiktok-ads.md) |
-| zapier | Automation | ✓ | ✓ | [✓](clis/zapier.js) | - | [zapier.md](integrations/zapier.md) |
+| zapier | Automation | ✓ | ✓ | [✓](clis/zapier.js) | ✓ | [zapier.md](integrations/zapier.md) |
 | hotjar | CRO | ✓ | - | [✓](clis/hotjar.js) | - | [hotjar.md](integrations/hotjar.md) |
 | optimizely | A/B Testing | ✓ | - | [✓](clis/optimizely.js) | ✓ | [optimizely.md](integrations/optimizely.md) |
 | calendly | Scheduling | ✓ | - | [✓](clis/calendly.js) | - | [calendly.md](integrations/calendly.md) |
@@ -75,9 +75,13 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | similarweb | Competitive Intelligence | ✓ | - | [✓](clis/similarweb.js) | - | [similarweb.md](integrations/similarweb.md) |
 | firehose | Competitive Intelligence | ✓ | - | - | - | [firehose.md](integrations/firehose.md) |
 | sparktoro | Audience Research | - | - | - | - | [sparktoro.md](integrations/sparktoro.md) |
+| rb2b | Visitor Identification | ✓ | - | - | - | [rb2b.md](integrations/rb2b.md) |
+| gong | Revenue Intelligence | ✓ | - | - | - | [gong.md](integrations/gong.md) |
 | airops | AI Content | ✓ | - | [✓](clis/airops.js) | - | [airops.md](integrations/airops.md) |
 | buffer | Social | ✓ | - | [✓](clis/buffer.js) | - | [buffer.md](integrations/buffer.md) |
 | wistia | Video | ✓ | - | [✓](clis/wistia.js) | - | [wistia.md](integrations/wistia.md) |
+| heygen | Video | ✓ | ✓ | - | ✓ | [heygen.md](integrations/heygen.md) |
+| hyperframes | Video | - | - | ✓ | ✓ | [hyperframes.md](integrations/hyperframes.md) |
 | trustpilot | Reviews | ✓ | - | [✓](clis/trustpilot.js) | - | [trustpilot.md](integrations/trustpilot.md) |
 | g2 | Reviews | ✓ | - | [✓](clis/g2.js) | - | [g2.md](integrations/g2.md) |
 | onesignal | Push | ✓ | - | [✓](clis/onesignal.js) | ✓ | [onesignal.md](integrations/onesignal.md) |
@@ -200,9 +204,9 @@ Workflow automation and integration platforms.
 
 | Tool | Best For | MCP Available |
 |------|----------|:-------------:|
-| **zapier** | No-code integrations | ✓ |
+| **zapier** | No-code integrations + SDK for 8,000+ apps | ✓ |
 
-**Agent recommendation**: Zapier for connecting tools without code.
+**Agent recommendation**: Zapier SDK for agents that need to interact with any app directly. Zaps for always-on automations.
 
 ### CRO & A/B Testing
 
@@ -258,13 +262,15 @@ Social media scheduling, management, and analytics.
 
 ### Video
 
-Video hosting, analytics, and engagement.
+Video hosting, creation, and AI generation.
 
 | Tool | Best For | Notes |
 |------|----------|-------|
-| **wistia** | Video hosting, marketing analytics | Best for marketing video |
+| **wistia** | Video hosting, marketing analytics | Best for marketing video hosting |
+| **heygen** | AI avatars, talking-head videos | MCP server available |
+| **hyperframes** | Programmatic video from HTML/CSS | Open source, agent-native |
 
-**Agent recommendation**: Wistia for marketing video hosting with analytics.
+**Agent recommendation**: HeyGen for AI avatar videos (MCP-enabled). Hyperframes for templated, data-driven video from code. Wistia for hosting and analytics.
 
 ### Data Enrichment
 
@@ -351,6 +357,26 @@ Audience intelligence and behavioral research tools.
 
 **Agent recommendation**: SparkToro for discovering where your ICP spends time — what they read, watch, listen to, follow, and search for. Essential for customer research, content strategy, and media buying decisions.
 
+### Visitor Identification
+
+Website visitor de-anonymization for B2B sales and marketing.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **rb2b** | Person-level visitor ID, intent signals | LinkedIn profiles, emails, page-level data |
+
+**Agent recommendation**: RB2B for identifying anonymous B2B website visitors and routing high-intent visitors to outreach tools. Pairs well with Clay for enrichment and Instantly/Lemlist for cold email.
+
+### Revenue Intelligence
+
+Sales conversation analytics, call recording, and deal intelligence.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **gong** | Call recording, transcript analysis, deal insights | REST API, 10k API calls/day |
+
+**Agent recommendation**: Gong for mining sales call transcripts for customer research, competitive intelligence, and coaching insights. Essential for revenue attribution and win/loss analysis.
+
 ### AI Content
 
 AI-powered content generation and optimization platforms.
@@ -434,7 +460,7 @@ These tools have Model Context Protocol servers available, enabling direct agent
 - **mailchimp** - Email campaign management
 - **google-ads** - Ad campaign management
 - **resend** - Transactional email sending
-- **zapier** - Workflow automation
+- **zapier** - Workflow automation + SDK for 8,000+ app integrations
 - **zoominfo** - B2B contacts and intent data
 - **clay** - Data enrichment and outbound automation
 - **supermetrics** - Cross-platform marketing data
